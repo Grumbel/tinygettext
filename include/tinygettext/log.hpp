@@ -20,11 +20,13 @@
 #ifndef HEADER_TINYGETTEXT_LOG_HPP
 #define HEADER_TINYGETTEXT_LOG_HPP
 
+#include "tinygettext_Export.h"
+
 #include <sstream>
 
 namespace tinygettext {
 
-class Log
+class TINYGETTEXT_API Log
 {
 public:
   typedef void (*log_callback_t)(const std::string&);

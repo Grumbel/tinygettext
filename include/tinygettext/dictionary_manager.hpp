@@ -20,6 +20,8 @@
 #ifndef HEADER_TINYGETTEXT_DICTIONARY_MANAGER_HPP
 #define HEADER_TINYGETTEXT_DICTIONARY_MANAGER_HPP
 
+#include "tinygettext_Export.h"
+
 #include <memory>
 #include <set>
 #include <string>
@@ -36,7 +38,7 @@ class FileSystem;
 /** Manager class for dictionaries, you give it a bunch of directories
     with .po files and it will then automatically load the right file
     on demand depending on which language was set. */
-class DictionaryManager
+class TINYGETTEXT_API DictionaryManager
 {
 private:
   typedef std::unordered_map<Language, Dictionary*, Language_hash> Dictionaries;

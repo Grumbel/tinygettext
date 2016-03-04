@@ -20,13 +20,15 @@
 #ifndef HEADER_TINYGETTEXT_PLURAL_FORMS_HPP
 #define HEADER_TINYGETTEXT_PLURAL_FORMS_HPP
 
+#include "tinygettext_Export.h"
+
 #include <string>
 
 namespace tinygettext {
 
 typedef unsigned int (*PluralFunc)(int n);
 
-class PluralForms
+class TINYGETTEXT_API PluralForms
 {
 private:
   unsigned int nplural;

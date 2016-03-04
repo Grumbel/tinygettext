@@ -20,6 +20,8 @@
 #ifndef HEADER_TINYGETTEXT_PO_PARSER_HPP
 #define HEADER_TINYGETTEXT_PO_PARSER_HPP
 
+#include "tinygettext_Export.h"
+
 #include <iosfwd>
 
 #include "iconv.hpp"
@@ -28,7 +30,7 @@ namespace tinygettext {
 
 class Dictionary;
 
-class POParser
+class TINYGETTEXT_API POParser
 {
 private:
   std::string filename;

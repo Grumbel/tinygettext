@@ -20,6 +20,8 @@
 #ifndef HEADER_TINYGETTEXT_DICTIONARY_HPP
 #define HEADER_TINYGETTEXT_DICTIONARY_HPP
 
+#include "tinygettext_Export.h"
+
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -31,7 +33,7 @@ namespace tinygettext {
 /** A simple dictionary class that mimics gettext() behaviour. Each
     Dictionary only works for a single language, for managing multiple
     languages and .po files at once use the DictionaryManager. */
-class Dictionary
+class TINYGETTEXT_API Dictionary
 {
 private:
   typedef std::unordered_map<std::string, std::vector<std::string> > Entries;

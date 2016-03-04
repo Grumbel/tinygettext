@@ -20,6 +20,8 @@
 #ifndef HEADER_TINYGETTEXT_LANGUAGE_HPP
 #define HEADER_TINYGETTEXT_LANGUAGE_HPP
 
+#include "tinygettext_Export.h"
+
 #include <string>
 #include <unordered_map>
 
@@ -28,7 +30,7 @@ namespace tinygettext {
 struct LanguageSpec;
 
 /** Lightweight wrapper around LanguageSpec */
-class Language
+class TINYGETTEXT_API Language
 {
 private:
   const LanguageSpec* language_spec;
